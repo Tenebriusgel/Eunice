@@ -24,6 +24,10 @@ header div{
     font-size: large;
     flex: 1;
 }
+.opps{
+    display: inline-flex;
+    list-style: none;
+}
 header a{
     padding: 1%;
     display: inline-block;
@@ -31,17 +35,38 @@ header a{
     color: white;
     text-decoration: none;
 }
+.menu {
+    justify-content: center;
+}
+.cont:hover .sub-menu1{
+    display: block;
+    position: absolute;
+    background-color: black;
+    margin-top: 10%;
+    margin-right: 2%;
+    padding: 10%;
+}
+.cont:hover .sub-menu1 {
+    p
+}
+.sub-menu1{
+    display: none;
+    align-items: center;
+}
 header a::after{
     content: '';
     width: 0%;
     height: 2px;
     display: block;
     margin: auto;
-    background: #f44366;
+    background: red;
     transition: 0.5s;
 }
 header a:hover::after{
     width: 100%;
+}
+.cont {
+    p
 }
 header nav{
     padding: 0px;
@@ -89,12 +114,14 @@ img {
     height: 100px;
     content: "";
     clear: both;
-    display: table;
+    display: flexbox;
     margin: 5%;
+    align-items: center;
 }
 .work img{
+    left: 0%;
+    padding-right: 5%;
     width: 20%;
-    padding: 1%;
 }
 .books{
     margin: 5%;
